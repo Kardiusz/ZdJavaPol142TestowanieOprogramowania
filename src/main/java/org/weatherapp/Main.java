@@ -21,5 +21,9 @@ public class Main {
         System.out.println("To jest nasz obiekt:");
         System.out.println(forecast.toString());
 
+        final HttpResponse<String> historicalForecast = weatherApiClient.getHistoricalWeather("Gdynia", "2015-01-21");
+        System.out.println("To jest nasz historical forecast:");
+
+        System.out.println(historicalForecast.body());
     }
 }
