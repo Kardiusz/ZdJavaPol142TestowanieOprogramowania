@@ -1,10 +1,12 @@
-package org.weatherapp.model;
+package org.weatherapp.model.WeatherStack;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.weatherapp.model.Forecast;
+import org.weatherapp.model.ForecastMapper;
 
-public class WeatherToForecastMapper implements ForecastMapper {
+public class WeatherStackToForecastMapper implements ForecastMapper {
 
     @Override
     public Forecast mapToForecast(final String json) throws JsonProcessingException {
